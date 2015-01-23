@@ -115,8 +115,13 @@ set expandtab "expandtab turns <TAB>s into spaces
     endfunction " }
     set foldtext=SimpleFoldText() " Custom fold text function (cleaner than default)
 "Color scheme
-if filereadable(glob("~/.vim/colors/distinguished.vim"))
-    colorscheme distinguished "https://github.com/Lokaltog/vim-distinguished
+
+if exists('$TMUX')-
+colorscheme elflord
 else
+    if filereadable(glob("~/.vim/colors/distinguished.vim")) || ('$TMUX')
+    colorscheme distinguished " https://github.com/Lokaltog/vim-distinguished
+    else
     colorscheme default
+    endif
 endif
