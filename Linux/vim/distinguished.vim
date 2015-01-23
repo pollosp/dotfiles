@@ -1,7 +1,7 @@
 
 " Author: Kim Silkebækken <kim.silkebaekken+vim@gmail.com>
 " Source repository: https://github.com/Lokaltog/vim-distinguished
-"place this file into ~/.vim/colors/
+" Place this file into ~/.vim/colors/
 
 " Initialization {{{
     set background=dark
