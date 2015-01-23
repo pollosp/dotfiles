@@ -1,0 +1,12 @@
+# .bashrc
+export PS1="\[\e[01;35m\][\[\e[0m\]\[\e[00;33m\]\u\[\e[0m\]\[\e[00;37m\]@\[\e[0m\]\[\e[01;32m\]\H\[\e[0m\]\[\e[00;37m\]:\[\e[0m\]\[\e[00;36m\]\w\[\e[0m\]\[\e[01;35m\]]\[\e[0m\]\[\e[01;31m\]\\$\[\e[0m\]"
+# User specific aliases and functions
+alias vi='vim'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
